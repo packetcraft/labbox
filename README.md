@@ -25,7 +25,7 @@ wait till the EXTERNAL-IP is assigned to teh azure-vote-front pod
 open http://<external-ip>/
 ```
 
-## Deploy a sample krypto miner
+## Deploy a sample Crypto miner
 ```bash
 # git clone --recursive https://github.com/brannondorsey/xmrig-k8s
 # cd xmrig-k8s
