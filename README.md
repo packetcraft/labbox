@@ -20,7 +20,18 @@ kubectl create namespace azure-vote
 kubectl apply -f azure-vote-all-in-one-redis.yaml -n azure-vote
 kubectl get svc -n azure-vote
 ```
-wait till the EXTERNAL-IP is assigned to teh azure-vote-front pod
+wait till the EXTERNAL-IP is assigned to the azure-vote-front pod
+```bash
+open http://<external-ip>/
+```
+
+## Deploy Sock-Shop microservices app
+```bash
+kubectl create namespace sock-shop   
+kubectl apply -f sock-shop.yaml   
+kubectl get svc -n sock-shop 
+```
+wait till the EXTERNAL-IP is assigned to the front-end pod
 ```bash
 open http://<external-ip>/
 ```
@@ -31,4 +42,7 @@ open http://<external-ip>/
 # cd xmrig-k8s
 kubectl apply -f xmrig-k8s.yaml
 
+kubectl apply -f graboid.yaml
 ```
+
+
