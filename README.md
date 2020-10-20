@@ -1,5 +1,5 @@
 # labbox
-Various kubernetes apps that i use my Prisma Cloud Compute (twistlock) local lab
+Various kubernetes apps that i use my Prisma Cloud Compute (twistlock) lab
 
 ## Deploy Portainer
 ```bash
